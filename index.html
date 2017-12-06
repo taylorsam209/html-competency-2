@@ -8,43 +8,10 @@
     <link rel="stylesheet" type="text/css" href="./index.css">
     <title>Document</title>
 </head>
-<!-- <style>
-    body {
-        text-align: center;
-        background-image: url("./assets/mountain.jpg");
-        background-size: cover;
-    }
 
-    .video-container {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        flex-wrap: wrap;
-        flex-direction: row;
-    }
-
-    .video-container>.video {
-        margin: 20px;
-    }
-
-    p+p {
-        color: red;
-        font-size: 20px;
-    }
-
-    article {
-        font-size: 1.5em;
-        font-weight: bold;
-        color: rgb(44, 5, 5)
-    }
-
-    audio{
-        float: left;
-    }
-</style> -->
 
 <body>
-    <p>Welcome to this html video list!</p>
+    <p class='text-effect'>Welcome to this html video list!</p>
     <p>Please Click and view any videos!</p>
     <section class="video-container">
 
@@ -62,9 +29,11 @@
             <source src="./assets/vid1.mp4" type="video/mp4">
         </video>
     </section>
-    <article>
-        Not feeling the videos?
+    <article id="article">
     </article>
+
+    <script>document.getElementById("article").innerHTML = "Not feeling the videos? Okay then.";</script>
+
     <footer>
         <h2> maybe listen to some Bone Thugs</h2>
         <audio controls>
