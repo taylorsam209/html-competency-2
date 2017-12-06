@@ -1,0 +1,32 @@
+body {
+    text-align: center;
+    background-image: url("./assets/mountain.jpg");
+    background-size: cover;
+}
+
+.video-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+.video-container>.video {
+    margin: 20px;
+}
+
+p + p {
+    color: red;
+    font-size: 20px;
+}
+
+article {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: rgb(44, 5, 5)
+}
+
+audio{
+    float: left;
+}
